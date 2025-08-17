@@ -96,11 +96,41 @@
 // SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 Zachary Higgs <compgeek223@gmail.com>
 // SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2021 Acruid
+// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers
+// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto
+// SPDX-FileCopyrightText: 2022 Willhelm53
+// SPDX-FileCopyrightText: 2022 Ygg01
+// SPDX-FileCopyrightText: 2022 keronshb
+// SPDX-FileCopyrightText: 2022 metalgearsloth
+// SPDX-FileCopyrightText: 2022 mirrorcult
+// SPDX-FileCopyrightText: 2023 DrSmugleaf
+// SPDX-FileCopyrightText: 2023 Emisse
+// SPDX-FileCopyrightText: 2023 Leon Friedrich
+// SPDX-FileCopyrightText: 2023 PixelTK
+// SPDX-FileCopyrightText: 2023 Psychpsyo
+// SPDX-FileCopyrightText: 2023 Slava0135
+// SPDX-FileCopyrightText: 2023 TemporalOroboros
+// SPDX-FileCopyrightText: 2023 Vasilis
+// SPDX-FileCopyrightText: 2023 brainfood1183
+// SPDX-FileCopyrightText: 2024 Arendian
+// SPDX-FileCopyrightText: 2024 Cojoke
+// SPDX-FileCopyrightText: 2024 Ed
+// SPDX-FileCopyrightText: 2024 Kara
+// SPDX-FileCopyrightText: 2024 SlamBamActionman
+// SPDX-FileCopyrightText: 2024 Tayrtahn
+// SPDX-FileCopyrightText: 2024 mr-bo-jangles
+// SPDX-FileCopyrightText: 2025 J
+// SPDX-FileCopyrightText: 2025 Princess Cheeseballs
+// SPDX-FileCopyrightText: 2025 Redrover1760
+// SPDX-FileCopyrightText: 2025 Zachary Higgs
+// SPDX-FileCopyrightText: 2025 starch
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Server.Administration.Logs;
+using Content.Server.Atmos.EntitySystems;
 using Content.Server.Chemistry.TileReactions;
 using Content.Server.DoAfter;
 using Content.Server.Fluids.Components;
@@ -161,6 +191,7 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
     [Dependency] private readonly SpeedModifierContactsSystem _speedModContacts = default!;
     [Dependency] private readonly TileFrictionController _tile = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
+    [Dependency] private readonly AtmosphereSystem _atmos = default!;
 
     [ValidatePrototypeId<ReagentPrototype>]
     private const string Blood = "Blood";
@@ -432,6 +463,7 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
         base.Update(frameTime);
         foreach (var ent in _deletionQueue)
         {
+            UpdateFlammability(ent, null);
             Del(ent);
         }
 
@@ -452,6 +484,7 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
         }
 
         _deletionQueue.Remove(entity);
+        UpdateFlammability((entity.Owner, entity.Comp), args.Solution);
         UpdateSlip((entity, entity.Comp), args.Solution);
         UpdateSlow(entity, args.Solution, entity.Comp); // Corvax-Next-Footprints
         UpdateEvaporation(entity, args.Solution);
@@ -495,6 +528,18 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
 
         _appearance.SetData(uid, PuddleVisuals.CurrentVolume, volume.Float(), appearance);
         _appearance.SetData(uid, PuddleVisuals.SolutionColor, color, appearance);
+    }
+    private void UpdateFlammability(Entity<PuddleComponent?> entity, Solution? solution)
+    {
+        if (solution is null)
+        {
+            _atmos.SetPuddleFlammabilityAtTile(entity.Owner, 0);
+            return;
+        }
+
+        var flammability = solution.GetSolutionFlammability(_prototypeManager);
+        _atmos.SetPuddleFlammabilityAtTile(entity.Owner, flammability);
+
     }
 
     private void UpdateSlip(Entity<PuddleComponent> entity, Solution solution)
