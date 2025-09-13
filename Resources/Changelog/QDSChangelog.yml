@@ -1,8 +1,6 @@
 Name: QDSlog
 Orders: -1
 Entries:
-Order: -1
-Entries:
 - author: Piras314
   changes:
     - type: Remove
