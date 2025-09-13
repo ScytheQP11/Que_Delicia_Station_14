@@ -26,7 +26,7 @@ Changelog:
   # The branch to look at for generating changelogs.
   ChangelogBranchName: "master"
   # File in Resources/Changelog/ that will be updated.
-  ChangelogFilename: "Changelog.yml"
+  ChangelogFilename: "QDSChangelog.yml"
   # The SSH Key to use to push/pull changes.
   SshKey: '/root/changelog_key'
   # The on-disk repo to keep up to date and to generate changelogs in.
