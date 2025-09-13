@@ -26,12 +26,12 @@ Changelog:
   # The branch to look at for generating changelogs.
   ChangelogBranchName: "master"
   # File in Resources/Changelog/ that will be updated.
-  ChangelogFilename: "Changelog.yml"
+  ChangelogFilename: "QDSChangelog.yml"
   # The SSH Key to use to push/pull changes.
-  SshKey: '/opt/ss14_changelog/ssh_key'
+  SshKey: '/root/changelog_key'
   # The on-disk repo to keep up to date and to generate changelogs in.
   # You need to initialize this manually with git clone.
-  ChangelogRepo: '/var/lib/changelog/repo/'
+  ChangelogRepo: '/root/qds/Que_Delicia_Station_14/Resources/Changelog'
   # How long to wait after a changelog-change has been merged/pushed before we generate changelogs and push a commit.
   DelaySeconds: 60
 
