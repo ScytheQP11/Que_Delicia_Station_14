@@ -210,6 +210,43 @@
     path: /Audio/Lobby/absconditus.ogg
 
 - type: jukebox
+  id: hihiha
+  name: Hail to the king - AVG7X
+  path:
+    path: /Audio/_QueDeliciaStation/Avenged Sevenfold - Hail To The King [Official Music Video] [TubeRipper.cc].ogg
+
+- type: jukebox
+  id: hihiha2
+  name: Please stop calling me gay - Pink Guy
+  path:
+    path: /Audio/_QueDeliciaStation/Please Stop Calling Me Gay [TubeRipper.cc].ogg
+
+- type: jukebox
+  id: hihiha3
+  name: Pink Guy - Please stop touching my willy
+  path:
+    path: /Audio/_QueDeliciaStation/Please Stop Touching My Willy [TubeRipper.cc](1).ogg
+
+- type: jukebox
+  id: hihiha4
+  name: Delicia - Promotech
+  path:
+    path: /Audio/_QueDeliciaStation/Promotech [TubeRipper.cc].ogg
+
+
+
+- type: jukebox
+  id: arab
+  name: Taliba - ops
+  path:
+    path: /Audio/_QueDeliciaStation/Arabian cat - (Official Music VIdeo) ft.Panjabi MC [TubeRipper.cc].ogg
+    
+- type: jukebox
+  id: invisible
+  name: Duran Duran - INVISIBLE
+  path:
+    path: /Audio/_QueDeliciaStation/Duran Duran - INVISIBLE [TubeRipper.cc]
+- type: jukebox
   id: spaceasshole
   name: Chris Remo - Space Asshole
   path:
