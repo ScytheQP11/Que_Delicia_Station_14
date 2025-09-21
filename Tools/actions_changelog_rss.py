@@ -41,7 +41,7 @@ SSH_PORT = 22
 RSS_FILE = "changelog.xml"
 XSL_FILE = "stylesheet.xsl"
 HOST_KEYS = [
-    "AAAAC3NzaC1lZDI1NTE5AAAAIOBpGO/Qc6X0YWuw7z+/WS/65+aewWI29oAyx+jJpCmh"
+    "AAAAC3NzaC1lZDI1NTE5AAAAILkrUT6Nu7w2+BEMwf3QUCjoSnUMi2tRrVHRe99m8SY+"
 ]
 
 # RSS feed parameters, change these
