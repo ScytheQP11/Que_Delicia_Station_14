@@ -46,10 +46,10 @@ HOST_KEYS = [
 
 # RSS feed parameters, change these
 FEED_TITLE       = "Space Station 14 Changelog"
-FEED_LINK        = "https://github.com/space-wizards/space-station-14/"
+FEED_LINK        = "https://github.com/Que-Delicia-Station-14/Que_Delicia_Station_14"
 FEED_DESCRIPTION = "Changelog for the official Wizard's Den branch of Space Station 14."
 FEED_LANGUAGE    = "en-US"
-FEED_GUID_PREFIX = "ss14-changelog-wizards-"
+FEED_GUID_PREFIX = "ss14-changelog-QDSlog-"
 FEED_URL         = "https://central.spacestation14.io/changelog.xml"
 
 CHANGELOG_FILE = "Resources/Changelog/Changelog.yml"
