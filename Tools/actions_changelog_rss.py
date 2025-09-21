@@ -52,7 +52,7 @@ FEED_LANGUAGE    = "en-US"
 FEED_GUID_PREFIX = "ss14-changelog-QDSlog-"
 FEED_URL         = "https://central.spacestation14.io/changelog.xml"
 
-CHANGELOG_FILE = "Resources/Changelog/Changelog.yml"
+CHANGELOG_FILE = "Resources/Changelog/QDSChangelog.yml"
 
 TYPES_TO_EMOJI = {
     "Fix":    "🐛",
