@@ -555,7 +555,7 @@ public sealed partial class GoobCVars
     /// Minimum velocity difference between 2 bodies for a shuttle impact to be guaranteed to trigger any special behaviors like damage.
     /// </summary>
     public static readonly CVarDef<float> MinimumImpactVelocity =
-        CVarDef.Create("shuttle.impact.minimum_velocity", 1500f, CVar.SERVERONLY); // RATT, theoreticly makes shuttleramming impossible.
+        CVarDef.Create("shuttle.impact.minimum_velocity", 10f, CVar.SERVERONLY); // RATT, theoreticly makes shuttleramming impossible.
 
     /// <summary>
     /// Multiplier of Kinetic energy required to dismantle a single tile in relation to its mass
