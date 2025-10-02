@@ -64,14 +64,14 @@
   path:
     path: /Audio/Lobby/festazumbi.ogg
 
-- type: jukebox
-  id: gangstarap
-  name: Gangstarap
-  path:
-    path: /Audio/Lobby/gangstarap.ogg
+#- type: jukebox
+#  id: gangstarap
+#  name: Gangstarap
+#  path:
+#    path: /Audio/Lobby/gangstarap.ogg
 
-- type: jukebox
-  id: plisno
-  name: Plisno pisadinha
-  path:
-    path: /Audio/Lobby/plisno.ogg
+#- type: jukebox
+#  id: plisno
+#  name: Plisno pisadinha
+#  path:
+#    path: /Audio/Lobby/plisno.ogg
