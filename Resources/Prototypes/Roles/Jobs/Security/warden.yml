@@ -138,6 +138,15 @@
     - !type:DepartmentTimeRequirement
       department: Security
       time: 7200 #2
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Reptilian
+    - !type:StyleRequirement
+      styles:
+      - HumanHairFloorlengthBedhead
+      - HumanHairClassicFloorlengthBedhead
+      - HumanHairFloorlengthBraid
   weight: 5
   startingGear: WardenGear
   icon: "JobIconWarden"

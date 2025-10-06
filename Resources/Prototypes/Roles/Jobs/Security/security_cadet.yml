@@ -106,6 +106,15 @@
       department: Security
       time: 500 #5 hrs
       inverted: true # stop playing intern if you're good at security!
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Reptilian
+    - !type:StyleRequirement
+      styles:
+      - HumanHairFloorlengthBedhead
+      - HumanHairClassicFloorlengthBedhead
+      - HumanHairFloorlengthBraid
   startingGear: SecurityCadetGear
   icon: "JobIconSecurityCadet"
   supervisors: job-supervisors-security

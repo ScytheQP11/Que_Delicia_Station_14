@@ -72,6 +72,14 @@
   - !type:RoleTimeRequirement
     role: JobSecurityOfficer
     time: 360 #5 hrs
+  - !type:SpeciesRequirement
+      species:
+      - Human
+  - !type:StyleRequirement
+      styles:
+      - HumanHairFloorlengthBedhead
+      - HumanHairClassicFloorlengthBedhead
+      - HumanHairFloorlengthBraid
   startingGear: DetectiveGear
   icon: "JobIconDetective"
   supervisors: job-supervisors-hos

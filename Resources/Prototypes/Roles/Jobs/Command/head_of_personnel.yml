@@ -139,7 +139,10 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Civilian
-      time: 10800 
+      time: 10800
+    - !type:SpeciesRequirement
+      species:
+      - Human       
    
   goobcoins: 40 #Goob content
   weight: 20

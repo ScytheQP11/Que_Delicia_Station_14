@@ -144,11 +144,17 @@
     - !type:DepartmentTimeRequirement
       department: Security
       time: 10800 # 3 hrs
-  #  - !type:StyleRequirement
-  #    styles:
-  #    - HumanHairFloorlengthBedhead
-  #    - HumanHairClassicFloorlengthBedhead
-  #    - HumanHairFloorlengthBraid
+    - !type:StyleRequirement
+      styles:
+      - HumanHairFloorlengthBedhead
+      - HumanHairClassicFloorlengthBedhead
+      - HumanHairFloorlengthBraid
+    - !type:SaturationRequirement # MisandryBox - no neon hair on captain
+       hairColorSaturation: 0.30
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Reptilian
   weight: 10
   startingGear: HoSGear
   icon: "JobIconHeadOfSecurity"
