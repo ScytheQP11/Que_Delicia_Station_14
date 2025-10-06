@@ -134,6 +134,9 @@
     - !type:DepartmentTimeRequirement
       department: Engineering
       time: 3600 #1 hrs
+    - !type:SpeciesRequirement
+      species:
+      - Human
   weight: 10
   startingGear: ChiefEngineerGear
   icon: "JobIconChiefEngineer"

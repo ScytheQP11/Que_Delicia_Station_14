@@ -140,6 +140,9 @@
     - !type:DepartmentTimeRequirement
       department: Medical
       time: 7200 #2 hrs
+    - !type:SpeciesRequirement
+      species:
+      - Human
   startingGear: CMOGear
   icon: "JobIconChiefMedicalOfficer"
   supervisors: job-supervisors-captain

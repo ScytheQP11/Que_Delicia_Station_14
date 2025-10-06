@@ -88,6 +88,15 @@
     - !type:DepartmentTimeRequirement
       department: Security
       time: 3600 #1 hr
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Reptilian
+    - !type:StyleRequirement
+      styles:
+      - HumanHairFloorlengthBedhead
+      - HumanHairClassicFloorlengthBedhead
+      - HumanHairFloorlengthBraid
   startingGear: SecurityOfficerGear
   icon: "JobIconSecurityOfficer"
   supervisors: job-supervisors-hos

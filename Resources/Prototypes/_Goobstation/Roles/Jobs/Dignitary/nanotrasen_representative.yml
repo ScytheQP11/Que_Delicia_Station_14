@@ -99,7 +99,17 @@
       department: Command
       time: 18000  #5 hours
     - !type:AgeRequirement
-      requiredAge: 21
+      requiredAge: 30
+    - !type:SpeciesRequirement
+      species:
+      - Human
+    - !type:StyleRequirement
+      styles:
+      - HumanHairFloorlengthBedhead
+      - HumanHairClassicFloorlengthBedhead
+      - HumanHairFloorlengthBraid
+    - !type:SaturationRequirement # MisandryBox - no neon hair
+       hairColorSaturation: 0.30
   weight: 20
   startingGear: NanotrasenRepresentativeGear
   icon: "JobIconNanotrasenRepresentative"

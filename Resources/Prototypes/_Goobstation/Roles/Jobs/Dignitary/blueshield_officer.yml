@@ -35,6 +35,17 @@
     - !type:DepartmentTimeRequirement
       department: Command
       time: 7200 # 2 hours
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Reptilian
+    - !type:StyleRequirement
+      styles:
+      - HumanHairFloorlengthBedhead
+      - HumanHairClassicFloorlengthBedhead
+      - HumanHairFloorlengthBraid
+    - !type:SaturationRequirement # MisandryBox - no neon hair on captain
+       hairColorSaturation: 0.30
 
     - !type:DepartmentTimeRequirement
       department: Security
