@@ -75,3 +75,9 @@
 #  name: Plisno pisadinha
 #  path:
 #    path: /Audio/Lobby/plisno.ogg
+
+- type: jukebox
+  id: xenophobia
+  name: Bill Sutton - Xenophobia
+  path:
+    path: /Audio/Lobby/Xenophobia.ogg
