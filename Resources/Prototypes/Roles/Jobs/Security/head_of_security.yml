@@ -150,7 +150,7 @@
       - HumanHairClassicFloorlengthBedhead
       - HumanHairFloorlengthBraid
     - !type:SaturationRequirement # MisandryBox - no neon hair on captain
-       hairColorSaturation: 0.30
+       hairColorSaturation: 0.85
     - !type:SpeciesRequirement
       species:
       - Human
