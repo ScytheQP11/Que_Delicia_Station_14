@@ -12,6 +12,16 @@
 // SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
 // SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Metal Gear Sloth
+// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto
+// SPDX-FileCopyrightText: 2021 Visne
+// SPDX-FileCopyrightText: 2022 Acruid
+// SPDX-FileCopyrightText: 2022 DrSmugleaf
+// SPDX-FileCopyrightText: 2022 metalgearsloth
+// SPDX-FileCopyrightText: 2022 wrexbe
+// SPDX-FileCopyrightText: 2024 Leon Friedrich
+// SPDX-FileCopyrightText: 2025 starch
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -89,13 +99,17 @@ namespace Content.Shared.Atmos.EntitySystems
             [ViewVariables]
             public readonly byte[] Opacity;
 
+            [ViewVariables]
+            public readonly byte FireType;
+
             // TODO change fire color based on temps
             // But also: dont dirty on a 0.01 kelvin change in temperatures.
             // Either have a temp tolerance, or map temperature -> byte levels
 
-            public GasOverlayData(byte fireState, byte[] opacity)
+            public GasOverlayData(byte fireState, byte type, byte[] opacity)
             {
                 FireState = fireState;
+                FireType = type;
                 Opacity = opacity;
             }
 
