@@ -119,7 +119,7 @@
   files:
    # - /Audio/Lobby/thunderdome.ogg
     #- /Audio/Lobby/absconditus.ogg
-    - /Audio/Lobby/space_asshole.ogg
+   # - /Audio/Lobby/space_asshole.ogg
     #- /Audio/Lobby/endless_space.ogg
     #- /Audio/Lobby/singuloose.ogg
     #- /Audio/Lobby/comet_haley.ogg
@@ -134,10 +134,10 @@
     # Goobstation - Custom lobby music
    # - /Audio/Lobby/skubstep.ogg
    # - /Audio/Lobby/sneedsfeedandseed.ogg
-    - /Audio/Lobby/clownalwayswins.ogg
+   # - /Audio/Lobby/clownalwayswins.ogg
    # - /Audio/Lobby/clownwmv.ogg
    # - /Audio/Lobby/dawsonschristian.ogg
-    - /Audio/Lobby/thewizard.ogg
+   # - /Audio/Lobby/thewizard.ogg
    # - /Audio/Lobby/skubstub.ogg
     #- /Audio/Lobby/space_radiation.ogg
    # - /Audio/Lobby/redsun.ogg
